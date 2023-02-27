@@ -1,0 +1,105 @@
+/* FlipCard.css */
+
+.flip-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #FFFFFF;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card-front img {
+    width: 100%;
+    max-width: 200px;
+    height: 225px; /* aspect ratio of 4:3 */
+    object-fit: cover; /* ensures the entire image is visible */
+    border-radius: 10px;
+  }
+  
+  .flip-card-front h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .flip-card-back {
+    background-color: #FFA500;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-back h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .flip-card-back ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flip-card-back li {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .flip-card .flip-card-front p {
+    /* Style the duration text here */
+    font-size: 16px;
+    color: #FFA500;
+    margin-bottom: 45px;
+    margin-right: 5px;   
+  }
+  
+  .recipe-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  
+  .recipe-button:hover {
+    background-color: darkorange;
+  }
