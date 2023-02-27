@@ -1,0 +1,86 @@
+.forgot-password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #2c2c54;
+  border: 1px solid #4a4e69;
+  border-radius: 10px;
+}
+ 
+.forgot-password-container h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  
+}
+ 
+.forgot-password-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  
+}
+ 
+.reset-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  
+}
+ 
+.reset-password-container input {
+  width: 93%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+ 
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: #a29bfe;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1.2em;
+}
+ 
+button:hover {
+  background-color: #6c5ce7;
+}
+ 
+.forgot-password-container a {
+  display: block;
+  margin: 10px auto 0;
+  background-color: #a29bfe;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+ 
+.forgot-password-container a:hover {
+  background-color: #6c5ce7;
+}
+ 
+.forgot-password-container a:focus {
+  outline: none;
+}
+ 
+.forgot-password-container a + a {
+  margin-left: 100px;
+}

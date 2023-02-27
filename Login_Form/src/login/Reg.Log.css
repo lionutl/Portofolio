@@ -1,0 +1,94 @@
+.register-container,
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #2c2c54;
+  border: 1px solid #4a4e69;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #4a4e69;
+  background-color: #fff;
+  color: #2c2c54;
+}
+
+input[type="password"] {
+  font-family: "Courier New", Courier, monospace;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+button {
+  background-color: #a29bfe;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1.2em;
+  margin-top: 10px;
+  
+}
+
+button:hover {
+  background-color: #6c5ce7;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.register-container button {
+  border-radius: 30px;
+}
+
+.login-container input[type="password"] {
+  font-family: 'Arial', sans-serif;
+}
+
+.login-container input:focus {
+  outline: none;
+  border: 1px solid #a29bfe;
+}
+
+
+
+p{
+  color: red;
+}
+/* Reg.Log.css */
